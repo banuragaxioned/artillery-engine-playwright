@@ -8,27 +8,26 @@
   Questions, comments, feedback? ➡️&nbsp;&nbsp;<a href="https://github.com/artilleryio/artillery/discussions">Artillery Discussion Board</a>
 </p>
 
-----
+---
 
-Ever wished you could run load tests with *real browsers*? Well, now you can.
+Ever wished you could run load tests with _real browsers_? Well, now you can.
 
-This Artillery engine lets you combine Playwright with Artillery to be able to launch *a whole lot of real browsers* to do *full browser load testing*.
+This Artillery engine lets you combine Playwright with Artillery to be able to launch _a whole lot of real browsers_ to do _full browser load testing_.
 
 <p align="center">
   <img src="https://www.artillery.io/img/blog/artillery-playwright-load-testing-browsers.gif" alt="demo" width="500">
 </p>
 
-
 ## At a glance
 
-* 🤖&nbsp;&nbsp;&nbsp;Run load tests with real (headless) Chrome instances
-* 🛰&nbsp;&nbsp;&nbsp;Run synthetic checks in CICD with the same Artillery + Playwright scripts
-* 📊&nbsp;&nbsp;&nbsp;See most important front-end metrics ([Largest Contentful Paint (LCP)](https://web.dev/lcp/), [First Contentful Paint (FCP)](https://web.dev/fcp/) etc) and how they are affected by high load
-* ♻️&nbsp;&nbsp;&nbsp; Use Playwright for load testing (full access to [`page` API](https://playwright.dev/docs/api/class-page/))
-* 🏎&nbsp;&nbsp;&nbsp;Create new load testing scripts 10x faster with [`playwright codegen`](https://playwright.dev/docs/cli/#generate-code)
-* 🌐&nbsp;&nbsp;&nbsp;Launch thousands of browsers, with **zero** infrastructure setup with [Artillery Pro](https://artillery.io/pro)
+- 🤖&nbsp;&nbsp;&nbsp;Run load tests with real (headless) Chrome instances
+- 🛰&nbsp;&nbsp;&nbsp;Run synthetic checks in CICD with the same Artillery + Playwright scripts
+- 📊&nbsp;&nbsp;&nbsp;See most important front-end metrics ([Largest Contentful Paint (LCP)](https://web.dev/lcp/), [First Contentful Paint (FCP)](https://web.dev/fcp/) etc) and how they are affected by high load
+- ♻️&nbsp;&nbsp;&nbsp; Use Playwright for load testing (full access to [`page` API](https://playwright.dev/docs/api/class-page/))
+- 🏎&nbsp;&nbsp;&nbsp;Create new load testing scripts 10x faster with [`playwright codegen`](https://playwright.dev/docs/cli/#generate-code)
+- 🌐&nbsp;&nbsp;&nbsp;Launch thousands of browsers, with **zero** infrastructure setup with [Artillery Pro](https://artillery.io/pro)
 
-✨ *Perfect for testing complex web apps* ✨
+✨ _Perfect for testing complex web apps_ ✨
 
 Read the official launch blog post here: [Launching 10,000 browsers for fun and profit](https://www.artillery.io/blog/load-testing-with-real-browsers)
 
@@ -38,12 +37,12 @@ Load testing complex web apps can be time consuming, cumbersome, and brittle com
 
 Summarized in the table below:
 
-|    | APIs & microservices      | Web apps |
- --- | ----------- | ----------- |
-**Abstraction level**    | HTTP endpoint      | Whole page       |
-**Surface area**   | Small, a handful of endpoints        | Large, calls many APIs. Different APIs may be called depending on in-page actions by the user
-**Formal spec** | Usually available (e.g. as an OpenAPI spec) | No formal specs for APIs used and their dependencies. You have to spend time in Dev Tools to track down all API calls
-**In-page JS** | Ignored. Calls made by in-page JS have to be accounted for manually and emulated | Runs as expected, e.g. making calls to more HTTP endpoints |
+|                       | APIs & microservices                                                             | Web apps                                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Abstraction level** | HTTP endpoint                                                                    | Whole page                                                                                                            |
+| **Surface area**      | Small, a handful of endpoints                                                    | Large, calls many APIs. Different APIs may be called depending on in-page actions by the user                         |
+| **Formal spec**       | Usually available (e.g. as an OpenAPI spec)                                      | No formal specs for APIs used and their dependencies. You have to spend time in Dev Tools to track down all API calls |
+| **In-page JS**        | Ignored. Calls made by in-page JS have to be accounted for manually and emulated | Runs as expected, e.g. making calls to more HTTP endpoints                                                            |
 
 All of those factors combined make load testing web apps with traditional approaches very frustrating and time consuming. 😞
 
@@ -60,6 +59,22 @@ npm install -g artillery artillery-engine-playwright
 (See [Use in Docker/CI](#use-in-dockerci) if running tests in Docker/CI)
 
 ### Running a test
+
+#### If you already have your setup (updated)
+
+```sh
+npm run test
+```
+
+This will:
+
+- Run the test `hello-world.yml`
+- Which invokes scenario `helloFlow` from processor `flows.js` file
+- The `hello-world.yml` currently is set to emulates certain phase conditions that you could edit
+- It runs the script, stores the report output in `report.json` in the root folder
+- And then subsequently, uses Artillery CLI to convert the json report to `report.json.html` file in the root folder
+
+#### If you want to setup from scratch (original instructions)
 
 Create an Artillery script:
 
@@ -88,16 +103,16 @@ Use a Playwright script to describe virtual user scenario:
 module.exports = { helloFlow };
 
 async function helloFlow(page) {
-  //
-  // The code below is just a standard Playwright script:
-  //
-  // Go to https://artillery.io/
-  await page.goto('https://artillery.io/');
-  // Click text=Pricing
-  await page.click('text=Pricing');
-  // assert.equal(page.url(), 'https://artillery.io/pro/');
-  // Click text=Sign up
-  await page.click('text=Sign up');
+	//
+	// The code below is just a standard Playwright script:
+	//
+	// Go to https://artillery.io/
+	await page.goto("https://artillery.io/");
+	// Click text=Pricing
+	await page.click("text=Pricing");
+	// assert.equal(page.url(), 'https://artillery.io/pro/');
+	// Click text=Sign up
+	await page.click("text=Sign up");
 }
 ```
 
@@ -207,14 +222,15 @@ config:
 
 ### Aggregate metrics by scenario name
 
-By default metrics are aggregated separately for each unique URL. When load testing the same endpoint with different/randomized query params, it can be hepful to group metrics by a common name. 
+By default metrics are aggregated separately for each unique URL. When load testing the same endpoint with different/randomized query params, it can be hepful to group metrics by a common name.
 
 To enable the option pass `aggregateByName: true` to the playwright engine and give a name to your scenarios:
+
 ```
 config:
   target: https://artillery.io
   engines:
-    playwright: { aggregateByName: true } 
+    playwright: { aggregateByName: true }
   processor: "./flows.js"
 scenarios:
   - name: blog
@@ -222,7 +238,9 @@ scenarios:
     flowFunction: "helloFlow"
     flow: []
 ```
+
 `flows.js`
+
 ```
 module.exports = { helloFlow };
 
@@ -241,8 +259,8 @@ By default, only the `page` argument (see Playwright's [`page` API](https://play
 module.exports = { helloFlow };
 
 async function helloFlow(page) {
-  // Go to https://artillery.io/
-  await page.goto('https://artillery.io/');
+	// Go to https://artillery.io/
+	await page.goto("https://artillery.io/");
 }
 ```
 
@@ -252,14 +270,12 @@ The functions also have access to virtual user context and events arguments, whi
 module.exports = { helloFlow };
 
 async function helloFlow(page, vuContext, events) {
-  // Increment custom counter:
-  events.emit('counter', 'user.page_loads', 1);
-  // Go to https://artillery.io/
-  await page.goto('https://artillery.io/');
+	// Increment custom counter:
+	events.emit("counter", "user.page_loads", 1);
+	// Go to https://artillery.io/
+	await page.goto("https://artillery.io/");
 }
 ```
-
-
 
 ## More examples
 
@@ -288,9 +304,7 @@ Ultimately, there is no formula to determine how many VUs can be supported on a 
 
 ➡️&nbsp;&nbsp;&nbsp;Let us know via <a href="https://github.com/artilleryio/artillery/discussions">Artillery Discussion board</a>
 
-
-----
-
+---
 
 ## License 📃
 

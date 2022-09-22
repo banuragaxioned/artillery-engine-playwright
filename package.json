@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "artillery run --platform local --count 25 --output report.json hello-world.yml && artillery report report.json"
+		"test": "artillery run --platform local --output report.json hello-world.yml && artillery report report.json"
 	},
 	"keywords": [],
 	"author": "",

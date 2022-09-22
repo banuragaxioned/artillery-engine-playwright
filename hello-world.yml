@@ -1,14 +1,15 @@
 config:
   target: https://www.artillery.io
   phases:
-    - duration: 10
-      arrivalRate: 1
+    - duration: 5
+      arrivalRate: 2
       maxVusers: 10
+      name: The attack!
   # Enable the Playwright engine:
   engines:
     playwright:
       launchOptions:
-        headless: false
+        headless: true
   processor: "./flows.js"
 scenarios:
   - engine: playwright
