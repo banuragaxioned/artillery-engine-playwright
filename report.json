@@ -1,0 +1,497 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 10,
+      "vusers.created": 10,
+      "browser.http_requests": 486,
+      "vusers.failed": 0,
+      "vusers.completed": 10
+    },
+    "rates": {},
+    "firstCounterAt": 1663842537907,
+    "firstHistogramAt": 1663842539588,
+    "lastCounterAt": 1663842550805,
+    "lastHistogramAt": 1663842550805,
+    "firstMetricAt": 1663842537907,
+    "lastMetricAt": 1663842550805,
+    "period": 1663842550000,
+    "summaries": {
+      "browser.page.FCP.https://www.artillery.io/": {
+        "min": 497.8,
+        "max": 1394.5,
+        "count": 10,
+        "p50": 699.4,
+        "median": 699.4,
+        "p75": 982.6,
+        "p90": 1130.2,
+        "p95": 1130.2,
+        "p99": 1130.2,
+        "p999": 1130.2
+      },
+      "browser.page.TTFB.https://www.artillery.io/": {
+        "min": 415.8,
+        "max": 1236.1,
+        "count": 10,
+        "p50": 450.4,
+        "median": 450.4,
+        "p75": 632.8,
+        "p90": 685.5,
+        "p95": 685.5,
+        "p99": 685.5,
+        "p999": 685.5
+      },
+      "browser.page.LCP.https://www.artillery.io/": {
+        "min": 571.9,
+        "max": 1394.7,
+        "count": 10,
+        "p50": 944,
+        "median": 944,
+        "p75": 1085.9,
+        "p90": 1274.3,
+        "p95": 1274.3,
+        "p99": 1274.3,
+        "p999": 1274.3
+      },
+      "browser.page.FID.https://www.artillery.io/pricing": {
+        "min": 1.8,
+        "max": 28.2,
+        "count": 9,
+        "p50": 3.7,
+        "median": 3.7,
+        "p75": 17.3,
+        "p90": 21.5,
+        "p95": 21.5,
+        "p99": 21.5,
+        "p999": 21.5
+      },
+      "vusers.session_length": {
+        "min": 3359,
+        "max": 4789.5,
+        "count": 10,
+        "p50": 4583.6,
+        "median": 4583.6,
+        "p75": 4676.2,
+        "p90": 4676.2,
+        "p95": 4676.2,
+        "p99": 4676.2,
+        "p999": 4676.2
+      },
+      "browser.page.CLS.https://www.artillery.io/pricing?tf=1": {
+        "min": 0,
+        "max": 0,
+        "count": 10,
+        "p50": 0,
+        "median": 0,
+        "p75": 0,
+        "p90": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0
+      },
+      "browser.page.FID.https://www.artillery.io/": {
+        "min": 16.7,
+        "max": 16.7,
+        "count": 1,
+        "p50": 16.6,
+        "median": 16.6,
+        "p75": 16.6,
+        "p90": 16.6,
+        "p95": 16.6,
+        "p99": 16.6,
+        "p999": 16.6
+      }
+    },
+    "histograms": {
+      "browser.page.FCP.https://www.artillery.io/": {
+        "min": 497.8,
+        "max": 1394.5,
+        "count": 10,
+        "p50": 699.4,
+        "median": 699.4,
+        "p75": 982.6,
+        "p90": 1130.2,
+        "p95": 1130.2,
+        "p99": 1130.2,
+        "p999": 1130.2
+      },
+      "browser.page.TTFB.https://www.artillery.io/": {
+        "min": 415.8,
+        "max": 1236.1,
+        "count": 10,
+        "p50": 450.4,
+        "median": 450.4,
+        "p75": 632.8,
+        "p90": 685.5,
+        "p95": 685.5,
+        "p99": 685.5,
+        "p999": 685.5
+      },
+      "browser.page.LCP.https://www.artillery.io/": {
+        "min": 571.9,
+        "max": 1394.7,
+        "count": 10,
+        "p50": 944,
+        "median": 944,
+        "p75": 1085.9,
+        "p90": 1274.3,
+        "p95": 1274.3,
+        "p99": 1274.3,
+        "p999": 1274.3
+      },
+      "browser.page.FID.https://www.artillery.io/pricing": {
+        "min": 1.8,
+        "max": 28.2,
+        "count": 9,
+        "p50": 3.7,
+        "median": 3.7,
+        "p75": 17.3,
+        "p90": 21.5,
+        "p95": 21.5,
+        "p99": 21.5,
+        "p999": 21.5
+      },
+      "vusers.session_length": {
+        "min": 3359,
+        "max": 4789.5,
+        "count": 10,
+        "p50": 4583.6,
+        "median": 4583.6,
+        "p75": 4676.2,
+        "p90": 4676.2,
+        "p95": 4676.2,
+        "p99": 4676.2,
+        "p999": 4676.2
+      },
+      "browser.page.CLS.https://www.artillery.io/pricing?tf=1": {
+        "min": 0,
+        "max": 0,
+        "count": 10,
+        "p50": 0,
+        "median": 0,
+        "p75": 0,
+        "p90": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0
+      },
+      "browser.page.FID.https://www.artillery.io/": {
+        "min": 16.7,
+        "max": 16.7,
+        "count": 1,
+        "p50": 16.6,
+        "median": 16.6,
+        "p75": 16.6,
+        "p90": 16.6,
+        "p95": 16.6,
+        "p99": 16.6,
+        "p999": 16.6
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 3,
+        "vusers.created": 3,
+        "browser.http_requests": 36
+      },
+      "rates": {},
+      "firstCounterAt": 1663842537907,
+      "firstHistogramAt": 1663842539588,
+      "lastCounterAt": 1663842539907,
+      "lastHistogramAt": 1663842539833,
+      "firstMetricAt": 1663842537907,
+      "lastMetricAt": 1663842539907,
+      "period": "1663842530000",
+      "summaries": {
+        "browser.page.FCP.https://www.artillery.io/": {
+          "min": 571.8,
+          "max": 571.8,
+          "count": 1,
+          "p50": 572.6,
+          "median": 572.6,
+          "p75": 572.6,
+          "p90": 572.6,
+          "p95": 572.6,
+          "p99": 572.6,
+          "p999": 572.6
+        },
+        "browser.page.TTFB.https://www.artillery.io/": {
+          "min": 429.8,
+          "max": 429.8,
+          "count": 1,
+          "p50": 432.7,
+          "median": 432.7,
+          "p75": 432.7,
+          "p90": 432.7,
+          "p95": 432.7,
+          "p99": 432.7,
+          "p999": 432.7
+        },
+        "browser.page.LCP.https://www.artillery.io/": {
+          "min": 571.9,
+          "max": 571.9,
+          "count": 1,
+          "p50": 572.6,
+          "median": 572.6,
+          "p75": 572.6,
+          "p90": 572.6,
+          "p95": 572.6,
+          "p99": 572.6,
+          "p999": 572.6
+        },
+        "browser.page.FID.https://www.artillery.io/pricing": {
+          "min": 1.8,
+          "max": 1.8,
+          "count": 1,
+          "p50": 1.8,
+          "median": 1.8,
+          "p75": 1.8,
+          "p90": 1.8,
+          "p95": 1.8,
+          "p99": 1.8,
+          "p999": 1.8
+        }
+      },
+      "histograms": {
+        "browser.page.FCP.https://www.artillery.io/": {
+          "min": 571.8,
+          "max": 571.8,
+          "count": 1,
+          "p50": 572.6,
+          "median": 572.6,
+          "p75": 572.6,
+          "p90": 572.6,
+          "p95": 572.6,
+          "p99": 572.6,
+          "p999": 572.6
+        },
+        "browser.page.TTFB.https://www.artillery.io/": {
+          "min": 429.8,
+          "max": 429.8,
+          "count": 1,
+          "p50": 432.7,
+          "median": 432.7,
+          "p75": 432.7,
+          "p90": 432.7,
+          "p95": 432.7,
+          "p99": 432.7,
+          "p999": 432.7
+        },
+        "browser.page.LCP.https://www.artillery.io/": {
+          "min": 571.9,
+          "max": 571.9,
+          "count": 1,
+          "p50": 572.6,
+          "median": 572.6,
+          "p75": 572.6,
+          "p90": 572.6,
+          "p95": 572.6,
+          "p99": 572.6,
+          "p999": 572.6
+        },
+        "browser.page.FID.https://www.artillery.io/pricing": {
+          "min": 1.8,
+          "max": 1.8,
+          "count": 1,
+          "p50": 1.8,
+          "median": 1.8,
+          "p75": 1.8,
+          "p90": 1.8,
+          "p95": 1.8,
+          "p99": 1.8,
+          "p999": 1.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "browser.http_requests": 450,
+        "vusers.created_by_name.0": 7,
+        "vusers.created": 7,
+        "vusers.failed": 0,
+        "vusers.completed": 8
+      },
+      "rates": {},
+      "firstCounterAt": 1663842540082,
+      "firstHistogramAt": 1663842540279,
+      "lastCounterAt": 1663842549799,
+      "lastHistogramAt": 1663842549815,
+      "firstMetricAt": 1663842540082,
+      "lastMetricAt": 1663842549815,
+      "period": "1663842540000",
+      "summaries": {
+        "browser.page.CLS.https://www.artillery.io/pricing?tf=1": {
+          "min": 0,
+          "max": 0,
+          "count": 10,
+          "p50": 0,
+          "median": 0,
+          "p75": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "p999": 0
+        },
+        "vusers.session_length": {
+          "min": 3359,
+          "max": 4789.5,
+          "count": 8,
+          "p50": 4583.6,
+          "median": 4583.6,
+          "p75": 4676.2,
+          "p90": 4676.2,
+          "p95": 4676.2,
+          "p99": 4676.2,
+          "p999": 4676.2
+        },
+        "browser.page.FCP.https://www.artillery.io/": {
+          "min": 497.8,
+          "max": 1394.5,
+          "count": 9,
+          "p50": 944,
+          "median": 944,
+          "p75": 982.6,
+          "p90": 1130.2,
+          "p95": 1130.2,
+          "p99": 1130.2,
+          "p999": 1130.2
+        },
+        "browser.page.TTFB.https://www.artillery.io/": {
+          "min": 415.8,
+          "max": 1236.1,
+          "count": 9,
+          "p50": 459.5,
+          "median": 459.5,
+          "p75": 671.9,
+          "p90": 685.5,
+          "p95": 685.5,
+          "p99": 685.5,
+          "p999": 685.5
+        },
+        "browser.page.LCP.https://www.artillery.io/": {
+          "min": 701.8,
+          "max": 1394.7,
+          "count": 9,
+          "p50": 982.6,
+          "median": 982.6,
+          "p75": 1176.4,
+          "p90": 1274.3,
+          "p95": 1274.3,
+          "p99": 1274.3,
+          "p999": 1274.3
+        },
+        "browser.page.FID.https://www.artillery.io/pricing": {
+          "min": 1.8,
+          "max": 28.2,
+          "count": 8,
+          "p50": 3.7,
+          "median": 3.7,
+          "p75": 17.3,
+          "p90": 21.5,
+          "p95": 21.5,
+          "p99": 21.5,
+          "p999": 21.5
+        },
+        "browser.page.FID.https://www.artillery.io/": {
+          "min": 16.7,
+          "max": 16.7,
+          "count": 1,
+          "p50": 16.6,
+          "median": 16.6,
+          "p75": 16.6,
+          "p90": 16.6,
+          "p95": 16.6,
+          "p99": 16.6,
+          "p999": 16.6
+        }
+      },
+      "histograms": {
+        "browser.page.CLS.https://www.artillery.io/pricing?tf=1": {
+          "min": 0,
+          "max": 0,
+          "count": 10,
+          "p50": 0,
+          "median": 0,
+          "p75": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "p999": 0
+        },
+        "vusers.session_length": {
+          "min": 3359,
+          "max": 4789.5,
+          "count": 8,
+          "p50": 4583.6,
+          "median": 4583.6,
+          "p75": 4676.2,
+          "p90": 4676.2,
+          "p95": 4676.2,
+          "p99": 4676.2,
+          "p999": 4676.2
+        },
+        "browser.page.FCP.https://www.artillery.io/": {
+          "min": 497.8,
+          "max": 1394.5,
+          "count": 9,
+          "p50": 944,
+          "median": 944,
+          "p75": 982.6,
+          "p90": 1130.2,
+          "p95": 1130.2,
+          "p99": 1130.2,
+          "p999": 1130.2
+        },
+        "browser.page.TTFB.https://www.artillery.io/": {
+          "min": 415.8,
+          "max": 1236.1,
+          "count": 9,
+          "p50": 459.5,
+          "median": 459.5,
+          "p75": 671.9,
+          "p90": 685.5,
+          "p95": 685.5,
+          "p99": 685.5,
+          "p999": 685.5
+        },
+        "browser.page.LCP.https://www.artillery.io/": {
+          "min": 701.8,
+          "max": 1394.7,
+          "count": 9,
+          "p50": 982.6,
+          "median": 982.6,
+          "p75": 1176.4,
+          "p90": 1274.3,
+          "p95": 1274.3,
+          "p99": 1274.3,
+          "p999": 1274.3
+        },
+        "browser.page.FID.https://www.artillery.io/pricing": {
+          "min": 1.8,
+          "max": 28.2,
+          "count": 8,
+          "p50": 3.7,
+          "median": 3.7,
+          "p75": 17.3,
+          "p90": 21.5,
+          "p95": 21.5,
+          "p99": 21.5,
+          "p999": 21.5
+        },
+        "browser.page.FID.https://www.artillery.io/": {
+          "min": 16.7,
+          "max": 16.7,
+          "count": 1,
+          "p50": 16.6,
+          "median": 16.6,
+          "p75": 16.6,
+          "p90": 16.6,
+          "p95": 16.6,
+          "p99": 16.6,
+          "p999": 16.6
+        }
+      }
+    }
+  ]
+}
